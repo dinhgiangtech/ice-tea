@@ -1,4 +1,4 @@
-import express from "express";
+const express = require("express");
 const router = express();
 
 router.get("/test", function (req, res, next) {

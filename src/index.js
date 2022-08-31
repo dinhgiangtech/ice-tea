@@ -1,9 +1,8 @@
-import express from "express";
+const express = require("express");
+const api = require("./routers/api.js");
+
 const app = express();
 const port = process.env.PORT || 3000;
-import api from "./routers/api.js";
-
-// app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ message: "alive" });
